@@ -46,4 +46,9 @@ public class CustomerController {
 		customerService.updateCustomerDetails(customer);
 	}
 	
+	@RequestMapping(value = "bye", method = RequestMethod.GET)
+	public String getCustomerbyDetails() {
+
+		return "Good by team";
+	}
 }
